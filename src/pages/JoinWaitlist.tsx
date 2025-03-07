@@ -26,14 +26,11 @@ const JoinWaitlist: React.FC = () => {
     }
 
     try {
-      const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbxYMabQI6SRDPT1P8meiVtwmxtwaRuWSDjQw7kiAo_9P4x4AwONMtEunEiZlLmciwiNBQ/exec",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ email }),
-        },
-      );
+      const response = await fetch("/.netlify/functions/submitEmail", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
 
       const result = await response.json();
       if (result.result === "success") {
