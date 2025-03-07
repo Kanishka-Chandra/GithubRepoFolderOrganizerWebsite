@@ -28,7 +28,7 @@ const BenefitsSection: React.FC = () => {
             />
           </div>
           <div className="relative order-2 h-full md:order-1">
-            <div className="h-full w-full overflow-hidden rounded-2xl shadow-xl">
+            <div className="h-[100vh] w-full overflow-hidden rounded-2xl shadow-xl">
               <img
                 src={BENEFITS_SECTION.image.url}
                 alt={BENEFITS_SECTION.image.alt}

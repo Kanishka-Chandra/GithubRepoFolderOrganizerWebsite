@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import SocialAuthButtons from "../components/SocialAuthButtons";
-import EmailAuthForm from "../components/EmailAuthForm";
+import SocialAuthButtons from "../components/AuthComponents/SocialAuthButtons";
+import EmailAuthForm from "../components/AuthComponents/EmailAuthForm";
 import { supabase } from "../lib/supabase";
 
 const Login: React.FC = () => {
@@ -63,13 +63,13 @@ const Login: React.FC = () => {
   return (
     <div className="flex h-screen flex-col">
       <Navbar />
-      <div className="from-primary flex flex-1 items-center justify-center bg-gradient-to-b to-white px-4 pt-16">
-        <div className="w-full max-w-md p-6">
-          <div className="mb-8 text-center">
-            <h2 className="text-text-primary mb-2 text-3xl font-bold">
+      <div className="from-primary flex flex-1 items-center justify-center bg-gradient-to-b to-white px-4 py-6 max-md:mt-16 md:px-16 md:py-20">
+        <div className="mx-auto w-full max-w-md space-y-4">
+          <div className="space-y-2 text-center">
+            <h2 className="text-text-primary text-4xl font-bold">
               Welcome back!
             </h2>
-            <p className="text-text-secondary">
+            <p className="text-text-secondary text-lg">
               Sign in to continue organizing your GitHub repositories
             </p>
           </div>
@@ -87,7 +87,7 @@ const Login: React.FC = () => {
             isLogin={true}
           />
 
-          <div className="relative my-8">
+          <div className="relative">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-gray-200"></div>
             </div>

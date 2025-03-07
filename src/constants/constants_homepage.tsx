@@ -34,7 +34,7 @@ export const HERO_CONTENT = {
     { value: "4.8/5", label: "User Rating" },
   ],
   image: {
-    url: "https://images.unsplash.com/photo-1618477388954-7852f32655ec",
+    url: "https://images.unsplash.com/photo-1630514969818-94aefc42ec47?auto=format&fit=crop&w=800&q=80", //  "https://images.unsplash.com/photo-1618477388954-7852f32655ec"
     alt: "Dashboard preview",
   },
   highlight: {
@@ -67,7 +67,7 @@ export const BENEFITS_SECTION = {
     ],
   },
   image: {
-    url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+    url: "https://images.unsplash.com/photo-1607799632518-da91dd151b38?auto=format&fit=crop&w=800&q=80",
     alt: "Organization preview",
   },
   highlight: {
@@ -87,7 +87,8 @@ export const FEATURES_SECTION = {
       description:
         "Create and manage virtual folders to organize your repositories exactly how you want them.",
       image:
-        "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=800&q=80",
+        "https://plus.unsplash.com/premium_photo-1675977693128-02be743c4a4c?auto=format&fit=crop&w=800&q=80",
+      //"https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=800&q=80",
     },
     {
       icon: <Github className="text-accent h-8 w-8" />,
@@ -113,6 +114,8 @@ export const CTA_SECTION = {
   heading: "Ready to organize your GitHub repositories?",
   description:
     "Join thousands of developers who are already enjoying a cleaner, more organized GitHub experience.",
+  background_image:
+    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80", //https://images.unsplash.com/photo-1522071820081-009f0129c71c
   button: {
     text: "Join Waitlist" /* "Install GitFolders Now" */,
     linkToOpen: ROUTES.waitlist.path,

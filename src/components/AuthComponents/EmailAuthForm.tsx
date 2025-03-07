@@ -20,10 +20,10 @@ const EmailAuthForm: React.FC<EmailAuthFormProps> = ({
 }) => {
   return (
     <form onSubmit={onSubmit} className="space-y-4">
-      <div>
+      <div className="space-y-1">
         <label
           htmlFor="email"
-          className="mb-1 block text-sm font-medium text-gray-700"
+          className="block text-sm font-medium text-gray-700"
         >
           Email address
         </label>
@@ -37,10 +37,10 @@ const EmailAuthForm: React.FC<EmailAuthFormProps> = ({
           required
         />
       </div>
-      <div>
+      <div className="space-y-1">
         <label
           htmlFor="password"
-          className="mb-1 block text-sm font-medium text-gray-700"
+          className="block text-sm font-medium text-gray-700"
         >
           Password
         </label>

@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
         <div className="relative h-full">
-          <div className="relative h-full w-full overflow-hidden rounded-lg shadow-2xl">
+          <div className="relative h-[100vh] w-full overflow-hidden rounded-lg shadow-2xl">
             <img
               src={HERO_CONTENT.image.url}
               alt={HERO_CONTENT.image.alt}

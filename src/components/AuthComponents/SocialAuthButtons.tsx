@@ -15,7 +15,7 @@ const SocialAuthButtons: React.FC<SocialAuthButtonsProps> = ({
   isLogin = true,
 }) => {
   return (
-    <div className="mb-6 space-y-4">
+    <div className="space-y-2">
       <button
         onClick={onGithub}
         disabled={loading}

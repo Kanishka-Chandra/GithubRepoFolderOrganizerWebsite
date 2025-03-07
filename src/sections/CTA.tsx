@@ -6,7 +6,10 @@ const CTA: React.FC = () => {
   return (
     <section className="bg-accent relative overflow-hidden px-4 py-6 text-white md:px-16 md:py-20">
       <div className="pointer-events-none absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1522071820081-009f0129c71c')] bg-cover bg-center" />
+        <div
+          style={{ backgroundImage: `url(${CTA_SECTION.background_image})` }}
+          className={`absolute inset-0 bg-cover bg-center`}
+        />
       </div>
       <div className="relative z-10 mx-auto flex max-w-4xl flex-col px-4 text-center">
         <h2 className="mb-6 text-4xl font-bold">{CTA_SECTION.heading}</h2>
