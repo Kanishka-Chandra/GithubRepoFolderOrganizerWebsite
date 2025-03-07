@@ -61,21 +61,21 @@ const Signup: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex h-screen flex-col">
       <Navbar />
-      <div className="flex flex-1 items-center justify-center bg-gradient-to-b from-[#F0F6FC] to-white px-4 pt-16">
+      <div className="from-primary flex flex-1 items-center justify-center bg-gradient-to-b to-white px-4 pt-16">
         <div className="w-full max-w-md p-6">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-[#24292E] mb-2">
+          <div className="mb-8 text-center">
+            <h2 className="text-text-primary mb-2 text-3xl font-bold">
               Create your account
             </h2>
-            <p className="text-gray-600">
+            <p className="text-text-secondary">
               Join thousands of developers organizing their GitHub repositories
             </p>
           </div>
 
           {error && (
-            <div className="bg-red-50 text-red-600 p-4 rounded-lg mb-6">
+            <div className="mb-6 rounded-lg bg-red-50 p-4 text-red-600">
               {error}
             </div>
           )}
@@ -92,7 +92,7 @@ const Signup: React.FC = () => {
               <div className="w-full border-t border-gray-200"></div>
             </div>
             <div className="relative flex justify-center text-sm">
-              <span className="px-4 bg-white text-gray-500">
+              <span className="bg-white px-4 text-gray-500">
                 Or sign up with email
               </span>
             </div>
@@ -108,9 +108,9 @@ const Signup: React.FC = () => {
           />
 
           <div className="mt-6 text-center">
-            <p className="text-gray-600">
+            <p className="text-text-secondary">
               Already have an account?{" "}
-              <Link to="/login" className="text-[#0366D6] hover:underline">
+              <Link to="/login" className="text-accent hover:underline">
                 Sign in
               </Link>
             </p>

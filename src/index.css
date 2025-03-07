@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@theme inline {
+  --color-primary: #f0f6fc;
+  --color-accent: #0366d6;
+  --color-accent-hover: #024e9d;
+  --color-text-primary: #24292e;
+  --color-text-secondary: var(--color-gray-600);
+  --color-text-placeholder: var(--color-gray-400);
+}

@@ -1,18 +1,18 @@
 import Navbar from "../components/Navbar";
-import HeroSection from "../components/HeroSection";
-import ProblemSolutionSection from "../components/ProblemSolutionSection";
-import FeaturesSection from "../components/FeaturesSection";
-import CTASection from "../components/CTASection";
+import Hero from "../sections/Hero";
+import BenefitsSection from "../sections/BenefitsSection";
+import Features from "../sections/Features";
+import CTA from "../sections/CTA";
 
 function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#F0F6FC] to-white">
+    <>
       <Navbar />
-      <HeroSection />
-      <ProblemSolutionSection />
-      <FeaturesSection />
-      <CTASection />
-    </div>
+      <Hero />
+      <BenefitsSection />
+      <Features />
+      <CTA />
+    </>
   );
 }
 

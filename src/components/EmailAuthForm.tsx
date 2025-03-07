@@ -23,7 +23,7 @@ const EmailAuthForm: React.FC<EmailAuthFormProps> = ({
       <div>
         <label
           htmlFor="email"
-          className="block text-sm font-medium text-gray-700 mb-1"
+          className="mb-1 block text-sm font-medium text-gray-700"
         >
           Email address
         </label>
@@ -32,7 +32,7 @@ const EmailAuthForm: React.FC<EmailAuthFormProps> = ({
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-[#0366D6] focus:border-transparent"
+          className="focus:ring-accent w-full rounded-lg border border-gray-200 p-3 focus:border-transparent focus:ring-2"
           placeholder="you@example.com"
           required
         />
@@ -40,7 +40,7 @@ const EmailAuthForm: React.FC<EmailAuthFormProps> = ({
       <div>
         <label
           htmlFor="password"
-          className="block text-sm font-medium text-gray-700 mb-1"
+          className="mb-1 block text-sm font-medium text-gray-700"
         >
           Password
         </label>
@@ -49,17 +49,17 @@ const EmailAuthForm: React.FC<EmailAuthFormProps> = ({
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full p-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-[#0366D6] focus:border-transparent"
+          className="focus:ring-accent w-full rounded-lg border border-gray-200 p-3 focus:border-transparent focus:ring-2"
           placeholder="••••••••"
           required
         />
       </div>
       <button
         type="submit"
-        className="w-full bg-[#0366D6] text-white p-3 rounded-lg hover:bg-[#024E9D] transition-colors flex items-center justify-center space-x-2"
+        className="bg-accent hover:bg-accent-hover flex w-full items-center justify-center space-x-2 rounded-lg p-3 text-white transition-colors"
       >
         <span>{buttonText}</span>
-        <ArrowRight className="w-5 h-5" />
+        <ArrowRight className="h-5 w-5" />
       </button>
     </form>
   );

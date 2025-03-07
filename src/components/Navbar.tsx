@@ -1,29 +1,41 @@
-import React from "react";
 import { FolderTree } from "lucide-react";
-import { Link } from "react-router-dom";
-import ThemeToggle from "./ThemeToggle"; // Import the new toggle component
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { NAME, ROUTES } from "../constants/constants_homepage";
 
 const Navbar: React.FC = () => {
+  const navigate = useNavigate();
   return (
-    <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-sm h-16 flex items-center justify-between px-6 shadow-sm z-50">
-      <div className="flex items-center space-x-2">
-        <FolderTree className="w-6 h-6 text-[#0366D6]" />
-        <span className="font-semibold text-lg">GitFolders</span>
+    <nav className="fixed top-0 z-50 flex h-16 w-full items-center justify-between rounded-b-md bg-white/70 px-4 shadow-sm backdrop-blur-md md:px-16">
+      <div
+        onClick={() => navigate(ROUTES.home.path)}
+        className="flex cursor-pointer items-center gap-x-2"
+      >
+        {/* // TODO: Logo Goes Here */}
+        <FolderTree className="text-accent h-auto w-6" />
+        <span className="text-lg font-semibold">{NAME}</span>
       </div>
-      <div className="flex items-center space-x-6">
-        <Link
-          to="/login"
-          className="text-gray-600 hover:text-[#0366D6] transition-colors"
+      <div className="flex items-center gap-x-2">
+        {/* //! Activate after Launch */}
+        {/* <Link
+          to={ROUTES.login.path}
+          className="hover:text-accent text-text-primary cursor-pointer px-3 py-2 font-medium transition-all"
         >
-          Login
+          {ROUTES.login.name}
         </Link>
         <Link
-          to="/signup"
-          className="bg-[#0366D6] text-white px-4 py-2 rounded-lg hover:bg-[#024E9D] transition-colors"
+          to={ROUTES.signup.path}
+          className="bg-accent hover:bg-accent-hover cursor-pointer rounded-lg px-3 py-2 font-medium text-white transition-all hover:rounded-md"
         >
-          Sign Up
+          {ROUTES.signup.name}
+        </Link> */}
+        {/* //! Deactivate after Launch */}
+        <Link
+          to={ROUTES.waitlist.path}
+          className="bg-accent hover:bg-accent-hover cursor-pointer rounded-lg px-3 py-2 font-medium text-white transition-all hover:rounded-md"
+        >
+          {ROUTES.waitlist.name}
         </Link>
-        <ThemeToggle />
       </div>
     </nav>
   );

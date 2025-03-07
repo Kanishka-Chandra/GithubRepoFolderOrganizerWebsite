@@ -15,24 +15,24 @@ const SocialAuthButtons: React.FC<SocialAuthButtonsProps> = ({
   isLogin = true,
 }) => {
   return (
-    <div className="space-y-4 mb-6">
+    <div className="mb-6 space-y-4">
       <button
         onClick={onGithub}
         disabled={loading}
-        className="w-full flex items-center justify-center space-x-2 bg-[#24292E] text-white p-3 rounded-lg hover:bg-[#1a1f24] transition-colors"
+        className="bg-text-primary flex w-full items-center justify-center space-x-2 rounded-lg p-3 text-white transition-colors hover:bg-[#1a1f24]"
       >
-        <Github className="w-5 h-5" />
+        <Github className="h-5 w-5" />
         <span>{isLogin ? "Continue with GitHub" : "Sign up with GitHub"}</span>
       </button>
       <button
         onClick={onGoogle}
         disabled={loading}
-        className="w-full flex items-center justify-center space-x-2 bg-white text-gray-700 p-3 rounded-lg border-2 hover:bg-gray-50 transition-colors"
+        className="flex w-full items-center justify-center space-x-2 rounded-lg border-2 bg-white p-3 text-gray-700 transition-colors hover:bg-gray-50"
       >
         <img
           src="https://www.google.com/favicon.ico"
           alt="Google"
-          className="w-5 h-5"
+          className="h-5 w-5"
         />
         <span>{isLogin ? "Continue with Google" : "Sign up with Google"}</span>
       </button>
