@@ -28,7 +28,7 @@ const TrustMetric: React.FC = () => {
  */
 const Hero: React.FC = () => {
   return (
-    <section className="bg-primary flex min-h-screen items-center justify-center px-4 py-6 max-md:mt-16 md:px-16 md:py-20">
+    <section className="bg-primary flex min-h-screen items-center justify-center px-4 py-20 md:px-16">
       <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
         <div className="text-left text-balance">
           {/* <TrustMetric /> */}
@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
         <div className="relative h-full">
-          <div className="relative h-[100vh] w-full overflow-hidden rounded-lg shadow-2xl">
+          <div className="relative h-[50vh] w-full overflow-hidden rounded-lg shadow-2xl md:h-[100vh]">
             <img
               src={HERO_CONTENT.image.url}
               alt={HERO_CONTENT.image.alt}

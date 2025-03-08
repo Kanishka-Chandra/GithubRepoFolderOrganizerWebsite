@@ -4,7 +4,7 @@ import { FEATURES_SECTION } from "../constants/constants_homepage";
 
 const Features: React.FC = () => {
   return (
-    <section className="bg-primary px-4 py-6 md:px-16 md:py-20">
+    <section className="bg-primary px-4 pt-6 pb-20 md:px-16 md:pt-20">
       <div className="mx-auto max-w-7xl space-y-10">
         <div className="space-y-4 text-center">
           <h2 className="text-text-primary text-4xl font-bold">

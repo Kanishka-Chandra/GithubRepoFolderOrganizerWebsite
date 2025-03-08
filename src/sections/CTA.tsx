@@ -4,7 +4,7 @@ import { CTA_SECTION } from "../constants/constants_homepage";
 
 const CTA: React.FC = () => {
   return (
-    <section className="bg-accent relative overflow-hidden px-4 py-6 text-white md:px-16 md:py-20">
+    <section className="bg-accent relative overflow-hidden px-4 pt-6 pb-20 text-white md:px-16 md:pt-20">
       <div className="pointer-events-none absolute inset-0 opacity-10">
         <div
           style={{ backgroundImage: `url(${CTA_SECTION.background_image})` }}

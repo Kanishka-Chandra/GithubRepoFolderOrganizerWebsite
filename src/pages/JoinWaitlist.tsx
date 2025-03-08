@@ -99,10 +99,10 @@ const JoinWaitlist: React.FC = () => {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className={`placeholder:text-text-placeholder transition-color w-full rounded-xl p-3 duration-200 outline-none focus:ring-2 ${
+                className={`placeholder:text-text-placeholder transition-color w-full rounded-xl border border-gray-300 bg-gray-50 p-3 duration-200 outline-none focus:ring-1 ${
                   email && !isValidEmail
                     ? "border-red-500 focus:border-red-500 focus:ring-red-500"
-                    : "focus:ring-accent border border-gray-300 bg-gray-50 focus:border-transparent"
+                    : "focus:border-accent focus:ring-accent"
                 }`}
                 placeholder={EMAIL.placeholder}
                 required
@@ -110,7 +110,7 @@ const JoinWaitlist: React.FC = () => {
             </div>
             <button
               type="submit"
-              className="bg-accent hover:bg-accent-hover flex w-full items-center justify-center rounded-lg p-3 font-medium text-white transition-colors disabled:bg-gray-500 hover:disabled:bg-gray-600"
+              className="bg-accent hover:bg-accent-hover flex w-full items-center justify-center rounded-lg p-3 font-medium text-white transition-colors disabled:bg-gray-400 hover:disabled:bg-gray-600"
               disabled={!isValidEmail}
             >
               {BUTTON_TEXT}

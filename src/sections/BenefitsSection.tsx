@@ -4,7 +4,7 @@ import { BENEFITS_SECTION } from "../constants/constants_homepage";
 
 const BenefitsSection: React.FC = () => {
   return (
-    <section className="bg-white px-4 py-6 md:px-16 md:py-20">
+    <section className="bg-white px-4 pt-6 pb-20 md:px-16 md:pt-20">
       <div className="mx-auto max-w-7xl space-y-10">
         <div className="space-y-4 text-center">
           <h2 className="text-text-primary text-4xl font-bold">
@@ -28,7 +28,7 @@ const BenefitsSection: React.FC = () => {
             />
           </div>
           <div className="relative order-2 h-full md:order-1">
-            <div className="h-[100vh] w-full overflow-hidden rounded-2xl shadow-xl">
+            <div className="h-[50vh] w-full overflow-hidden rounded-2xl shadow-xl md:h-[100vh]">
               <img
                 src={BENEFITS_SECTION.image.url}
                 alt={BENEFITS_SECTION.image.alt}

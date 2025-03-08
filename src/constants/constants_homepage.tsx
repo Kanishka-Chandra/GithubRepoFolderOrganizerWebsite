@@ -63,7 +63,7 @@ export const BENEFITS_SECTION = {
     points: [
       "Intuitive folder organization for all your repositories",
       "Quick access to grouped projects and repositories",
-      "Efficient workflow with smart search and filters",
+      "Efficient workflow with a smart search for quick access",
     ],
   },
   image: {
